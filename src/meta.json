@@ -1,10 +1,6 @@
 [
   {
     "name": "sample",
-    "desc": "小程序自开发模板"
-  },
-  {
-    "name": "ext",
-    "desc": "小程序服务商模板"
+    "desc": "小程序样本模板，支持自开发模式: page/component creator、sass/es6 supported、etc..."
   }
 ]
