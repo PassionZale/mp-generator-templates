@@ -1,0 +1,4 @@
+<block wx:if="{{link !== null}}">
+  <web-view src="{{link}}" />
+</block>
+

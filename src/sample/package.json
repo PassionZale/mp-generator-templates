@@ -1,8 +1,7 @@
 {
-  "name": "official-mp",
-  "version": "1.1.2",
-  "description": "灵智官方小程序",
-  "main": "index.js",
+  "name": "{{name}}",
+  "version": "0.0.1",
+  "description": "{{description}}",
   "scripts": {
     "commit": "git-cz",
     "make": "node ./scripts/generator/index",
@@ -24,18 +23,7 @@
     "preview:prod": "node ./scripts/ci/preview --env=prod",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "http://gitlab.lzstack.com/saas/saas-admin/frontend/mps/official-mp.git"
-  },
-  "keywords": [
-    "灵智数科",
-    "小程序",
-    "客户管理",
-    "名片"
-  ],
-  "author": "Lei Zhang<zhanglei@rainbowcn.com>",
-  "license": "ISC",
+  "author": "{{author}}",
   "config": {
     "commitizen": {
       "path": "node_modules/cz-customizable"
@@ -55,7 +43,7 @@
       "eslint --fix",
       "prettier --write"
     ],
-    "src/**/*.{scss,less,wxss}": [
+    "src/**/*.{scss,wxss}": [
       "stylelint --fix",
       "prettier --write"
     ],

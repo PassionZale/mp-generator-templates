@@ -1,0 +1,6 @@
+<navbar title="<!-- @echo FILENAME -->" />
+
+<view class="container">
+  <!-- @echo FILENAME -->
+</view>
+
