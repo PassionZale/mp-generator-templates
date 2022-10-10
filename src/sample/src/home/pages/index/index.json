@@ -1,8 +1,7 @@
 {
-  "navigationBarTitleText": "wechat",
+  "navigationBarTitleText": "{{name}}",
   "backgroundColor": "#f6f6f6",
   "navigationBarTextStyle": "black",
-  "navigationStyle": "custom",
-  "enablePullDownRefresh": false,
+  "enablePullDownRefresh": true,
   "usingComponents": {}
 }

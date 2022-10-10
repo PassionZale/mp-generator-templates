@@ -2,6 +2,21 @@
 
 {{description}}
 
+更多详细的介绍可参考：[微信小程序](https://lovchun.com/tags/miniprogram)
+
+## 项目初始化
+
+### .npmrc
+
+在 `.npmrc` 中，填充 `repo` ，即仓库地址**
+
+### env
+
+在 `.env` 文件中，填充各个环境的 `APPID` 和 `API_BASEPATH`
+
+- APPID: 当前环境所使用的小程序 APPID;
+- API_BASEPATH: 当前环境服务端 host 前缀，例如：https://dev-api.exp.com/api/v1;
+
 ## 项目规范
 
 ### VSCode Plugin
@@ -55,7 +70,6 @@
 APPID=小程序APPID
 API_BASEPATH=接口调用域名
 API_ALIAS_ENABLED=true or false(生产必须为false)
-// ... 其他待规划
 ```
 
 ### 分支说明
@@ -184,8 +198,7 @@ npm run build:prod
           index.wxml
           index.scss
           index.json
-    customer/ 顾客端
-    employee/ 员工端
+    otherSubPackage/ 其他分包
 ```
 
 ## 项目开发
@@ -205,6 +218,8 @@ sudo npm install --unsafe-perm=true --allow-root
 - 运行 `npm run start:${env}`
 
 - 将 **根目录** 导入开发者工具, 注意 **不是导入 dist/** 目录
+
+`npm run start` 默认为 `dev` 环境
 
 `npm run start:dev`
 
@@ -335,7 +350,7 @@ import { useRequest } from '@/_shared/configs/helper/request'
 
 Page({
   async loadData1() {
-    const [error, res] = await useRequest('user/coupon', { foo: 'bar' })
+    const [error, res] = await useRequest('user/info', { foo: 'bar' })
 
     if(error) {
       // error.message
@@ -344,7 +359,7 @@ Page({
 
   async loadData2() {
     try {
-      const { data } = await request('user/coupon', { foo: 'bar' })
+      const { data } = await request('user/info', { foo: 'bar' })
     } catch (error) {
       // error.message
     }

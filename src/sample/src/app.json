@@ -1,7 +1,5 @@
 {
-  "pages": [
-    "home/pages/index/index"
-  ],
+  "pages": ["home/pages/index/index", "home/pages/example/example"],
   "window": {
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#f9f9f9",
@@ -10,6 +8,18 @@
     "navigationStyle": "default",
     "navigationBarTextStyle": "black",
     "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "home/pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "home/pages/example/example",
+        "text": "示例"
+      }
+    ]
   },
   "usingComponents": {},
   "permission": {},
