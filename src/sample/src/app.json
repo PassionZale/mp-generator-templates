@@ -1,7 +1,6 @@
 {
   "pages": [
-    "home/pages/index/index",
-    "home/pages/webview/webview"
+    "home/pages/index/index"
   ],
   "window": {
     "backgroundTextStyle": "dark",
