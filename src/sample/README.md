@@ -8,7 +8,7 @@
 
 ### .npmrc
 
-在 `.npmrc` 中，填充 `repo` ，即仓库地址
+在 `.npmrc` 中，填充 `repo` ，即仓库地址，例如：https://https://github.com/PassionZale/mp-generator-templates.git
 
 ### env
 
